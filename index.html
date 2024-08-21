@@ -10,7 +10,7 @@
 
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- tailwind.config.js -->
     <script>
         tailwind.config = {
@@ -18,11 +18,17 @@
             extend: {
             colors: {
                 clifford: '#da373d',
+                'black-212121': '#212121',
+                'black-494949': '#494949',
+                'gray-737373': '#737373',
             }
             }
         }
         }
     </script>
+
+    <!-- fontawesome kits -->
+    <script src="https://kit.fontawesome.com/81e528e512.js" crossorigin="anonymous"></script>
 
     <!-- google font-manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,8 +42,68 @@
     </style>
 </head>
 <body class="manrope-font">
-    <header>
-        
+    <header class="container mt-7 lg:mt-12 mx-auto">
+        <!-- navbar section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn rounded-full lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 border rounded-full sm:"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a  class="btn" href="">Book Consult</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-[28px] lg:text-3xl font-extrabold text-black-212121"><i class="fa-solid fa-arrow-right -rotate-45 p-2 border rounded-full bg-[#ABEF5F]"></i> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-sm font-normal text-gray-737373">
+                  <li><a class="font-extrabold text-black-494949" href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-4">
+                <a href=""><i class="fa-solid fa-magnifying-glass invisible lg:visible p-3 border rounded-full bg-white"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping invisible lg:visible p-3 border rounded-full bg-white"></i></a>
+                <button><a class="btn rounded-full bg-[#ABEF5F] invisible lg:visible">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 p-2 border rounded-full bg-black text-white"></i></a></button>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <div class="hero mt-14 mb-24">
+            <div class="hero-content flex-col text-center">
+              <img
+                src="assets/banner.png"
+                class="max-w-sm rounded-lg" />
+              <div>
+                <h1 class="text-[28px] lg:text-[64px] font-extrabold text-black-212121 leading-none">A barn house of this design has a striking appearance</h1>
+                <p class="font-medium pt-6 pb-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light
+                </p>
+                <button class="btn w-80 lg:w-52 rounded-full bg-lime-200"><a href="">View Details <i class="fa-solid fa-arrow-right -rotate-45 p-2 border rounded-full bg-[#ABEF5F]"></i></a></button>
+              </div>
+            </div>
+          </div>
     </header>
 
     <main>
